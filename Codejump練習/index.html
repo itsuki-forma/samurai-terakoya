@@ -1,0 +1,84 @@
+<!-- コーディング仕様
+コンテンツ幅
+    コンテンツの横幅は960pxで横のパディングは4%です。
+    メインビジュアルだけ全幅にします。
+メインビジュアル
+    全幅で高さは600px固定です。
+About
+    画像をCSSで丸く切り抜きます。
+    画像とテキストを横並びの中央寄せで配置します。
+Bicycle
+    画像を両端ぞろえの横ならびに配置します。
+レスポンシブ
+    ブレークポイントは600pxです。
+    About、Bicycleともに、レスポンシブ時はコンテンツを縦積みにします。
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Profile</title>
+        <meta name="discrioption" content="テキストテキストテキストテキスト">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" href="img/favicon.ico">
+        
+    </head>
+    <body>
+        <header id="header">
+            <div id="top-logo">
+                <a href="index.html"><img src="img/logo.svg" alt="プロフィールロゴ"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html#about"></a>About</li>
+                    <li><a href="index.html#bicycle"></a>Bicycle</li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <img id="mainvisual" src="img/mainvisual.jpg" alt="メインビジュアル">
+            
+            <section id="about" class="base">
+                <h1>About</h1>
+                <div class="about-box">
+                    <img id="about-photo" src="img/about.jpg" alt="プロフィール写真">
+                    <div class="about-text">
+                        <h2>KAKERU MIYAICHI</h2>
+                        <p>テキストテキストテキストテキストテキストテキストテキスト<br>
+                            テキストテキストテキストテキストテキストテキストテキスト<br>
+                            テキストテキストテキストテキストテキストテキストテキスト</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="bicycle" class="base">
+                <h1>Bicycle</h1>
+                <div class="bic-container">
+                    <div class="bic-box1">
+                        <img class="bic-img" src="img/bicycle1.jpg" alt="自転車1">
+                        <h2 class="sub-title">タイトルタイトル</h2>
+                        <p>テキストテキストテキスト</p>    
+                    </div>
+                    <div class="bic-box2">
+                        <img class="bic-img" src="img/bicycle2.jpg" alt="自転車2">
+                        <h2>タイトルタイトル</h2>
+                        <p>テキストテキストテキスト</p>    
+                    </div>
+                    <div class="bic-box3">
+                        <img class="bic-img" src="img/bicycle3.jpg" alt="自転車3">
+                        <h2>タイトルタイトル</h2>
+                        <p>テキストテキストテキスト</p>    
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+<!-- コピーライト -->
+            <p>&copy; 2020 Profile</p>
+        </footer>
+    </body>
+</html>
